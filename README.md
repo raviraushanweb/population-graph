@@ -12,62 +12,52 @@
 #### Common Step for All Platforms
 
 - **Install Python (if not already installed)**
-   - On **Linux**:```sql
-   Copy code
-   sudo apt-get update
-sudo apt-get install python3
-
-```
-   - On **MacBook** (using Homebrew):```css
-   Copy code
-   brew install python@3.9
-
-```
+   - On **Linux**:
+    ```sql
+    sudo apt-get update
+    sudo apt-get install python3
+    ```
+   - On **MacBook** (using Homebrew):
+    ```css
+    brew install python@3.9
+    ```
    - On **Windows**:
       - Download and install Python from the
       Python website
       .
       - Make sure to check the option "Add Python 3.9 to PATH" during installation.
    - **Install Python 3 Virtual Environment**
-   - This step is common for all platforms:```css
-   Copy code
-   python3 -m pip install --user virtualenv
-
-```
+   - This step is common for all platforms:
+    ```css
+    python3 -m pip install --user virtualenv
+    ```
 
 #### Platform-Specific Steps
 
 - **Create a Virtual Environment**
 
 ```
-Copy code
 python3 -m venv .venv
-
 ```
 - **Activate the Virtual Environment**
-   - On **Linux** and **MacBook**:```bash
-   Copy code
-   source .venv/bin/activate
-
-```
-   - On **Windows**:```
-   Copy code
-   .\.venv\Scripts\activate
-
-```
+   - On **Linux** and **MacBook**:
+    ```bash
+    source .venv/bin/activate
+    ```
+   - On **Windows**:
+    ```
+    .\.venv\Scripts\activate
+    ```
 - **Install Required Python Packages**
 
 ```
-Copy code
 python3 -m pip install -r requirements.txt
-
 ```
 - **Optional: Deactivate the Virtual Environment**
-   - To exit the virtual environment when your work is done:```
-   Copy code
-   deactivate
-
-```
+   - To exit the virtual environment when your work is done:
+    ```
+    deactivate
+    ```
 
 ### Notes
 
